@@ -1,0 +1,33 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+.page{
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 20px;
+    color: black;
+}
+
+/* Blocks */
+@import "Blocks/header.scss";
+@import "Blocks/nav.scss";
+@import "Blocks/search.scss";
+@import "Blocks/main.scss";
+@import "Blocks/footer.scss";
+@import "Blocks/ul.scss";
