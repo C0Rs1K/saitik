@@ -1,0 +1,20 @@
+.product__card {
+    display: block;
+    position: absolute;
+    height: 60vh;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    border: black solid 4px;
+    background-color: rgb(140, 140, 140);
+    border-radius: 15px;
+    box-shadow: inset 3px 3px 0px rgba(255, 255, 255, 1), inset -4px -4px 0px rgb(80, 80, 80), -4px -4px 3px rgba(255, 255, 255, 0.2), 4px 4px 3px rgba(255, 255, 255, .2);
+}
+.lether__helmet {
+    width: 10%;
+}
+
+.main__product__image {
+    display: flex;
+    margin-top: 6%;
+}

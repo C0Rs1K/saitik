@@ -20,8 +20,8 @@ body {
     height: 100%;
 
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 20px;
-    color: black;
+    font-size: 24px;
+    color: white;
 }
 
 /* Blocks */
@@ -31,3 +31,5 @@ body {
 @import "Blocks/main.scss";
 @import "Blocks/footer.scss";
 @import "Blocks/ul.scss";
+@import "Blocks/container.scss";
+@import "Blocks/helmet.scss";

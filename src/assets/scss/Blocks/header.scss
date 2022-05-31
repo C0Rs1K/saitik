@@ -1,6 +1,7 @@
 .header {
     display: flex;
     width: 100%;
+    height: 50px;
 
     background-color: $primary;
     position: fixed;
@@ -21,7 +22,6 @@
 
 .header__logo {
     width: 100px;
-    padding: 10px 25px;
 }
 
 .header__search {
@@ -29,5 +29,17 @@
 }
 
 .header__cart {
-    padding: 10px 25px;
+    padding: 0px 20px 0px 20px;
+}
+
+.cart {
+    width: 50px;
+    filter: grayscale(100%);
+}
+
+.logo {
+    margin: 0;
+    padding-top: 0;
+    width: 100px;   
+    padding-left: 15px;
 }

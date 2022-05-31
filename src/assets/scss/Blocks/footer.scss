@@ -1,23 +1,40 @@
 .footer {
     position: absolute;
+    display: flex;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 150px;
     background-color: $primary;
     color: white;
+
+    z-index: $z-index-footer;
 }
 
 .footer__info {
     display: flex;
     height: 100%;
-    width: 30%;
+    width: 100%;
 }
 
 .footer__ul {
-    padding: 20px;
     display: block;
+    padding: 20px;
     height: 100%;
-    width: 30%;
+    width: 15%;
     list-style-type: none;
+}
+
+
+.lether__stuff {
+    display: flex;
+    text-align: left;
+    width: 30%;
+    height: 100%;
+}
+
+.rights {
+    padding-top: 100px;
+    padding-left: 40px;
+    font-size: 10px;
 }

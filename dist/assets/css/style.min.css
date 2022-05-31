@@ -17,14 +17,15 @@ body {
   background-color: white;
   height: 100%;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 20px;
-  color: black;
+  font-size: 24px;
+  color: white;
 }
 
 /* Blocks */
 .header {
   display: flex;
   width: 100%;
+  height: 50px;
   background-color: #222;
   position: fixed;
   top: 0;
@@ -41,7 +42,6 @@ body {
 
 .header__logo {
   width: 100px;
-  padding: 10px 25px;
 }
 
 .header__search {
@@ -49,7 +49,19 @@ body {
 }
 
 .header__cart {
-  padding: 10px 25px;
+  padding: 0px 20px 0px 20px;
+}
+
+.cart {
+  width: 50px;
+  filter: grayscale(100%);
+}
+
+.logo {
+  margin: 0;
+  padding-top: 0;
+  width: 100px;
+  padding-left: 15px;
 }
 
 .nav__list {
@@ -91,41 +103,76 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.container {
-  padding-top: 40px;
-  padding-bottom: 170px;
+.product__h,
+.product__info {
+  display: block;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  height: 100vh;
-  background: url(../../images/123.jpg) center no-repeat;
-  background-size: cover;
+  padding: 60px 0 20px 0;
 }
 
 .product__info {
-  display: block;
+  padding: 20px 0 20px 0;
+}
+
+.lether__head {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 7%;
+  margin-left: 20%;
+}
+
+.main_img {
+  display: inline-block;
+  width: 80%;
+  height: 60%;
+}
+
+.stuff {
+  display: inline-block;
+  width: 20%;
+  height: 40%;
 }
 
 .footer {
   position: absolute;
+  display: flex;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 150px;
   background-color: #222;
   color: white;
+  z-index: 1000;
 }
 
 .footer__info {
   display: flex;
   height: 100%;
-  width: 30%;
+  width: 100%;
 }
 
 .footer__ul {
-  padding: 20px;
   display: block;
+  padding: 20px;
   height: 100%;
-  width: 30%;
+  width: 15%;
   list-style-type: none;
+}
+
+.lether__stuff {
+  display: flex;
+  text-align: left;
+  width: 30%;
+  height: 100%;
+}
+
+.rights {
+  padding-top: 100px;
+  padding-left: 40px;
+  font-size: 10px;
 }
 
 .ul__header {
@@ -142,8 +189,33 @@ body {
   color: gray;
 }
 
-.rights {
-  padding: 5px;
-  padding-left: 50px;
-  font-size: 10px;
+.container {
+  margin-top: 45px;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0) url("/assets/images/fon.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.product__card {
+  display: block;
+  position: absolute;
+  height: 60vh;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+  border: black solid 4px;
+  background-color: rgb(140, 140, 140);
+  border-radius: 15px;
+  box-shadow: inset 3px 3px 0px rgb(255, 255, 255), inset -4px -4px 0px rgb(80, 80, 80), -4px -4px 3px rgba(255, 255, 255, 0.2), 4px 4px 3px rgba(255, 255, 255, 0.2);
+}
+
+.lether__helmet {
+  width: 10%;
+}
+
+.main__product__image {
+  display: flex;
+  margin-top: 6%;
 }
