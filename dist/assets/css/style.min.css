@@ -19,6 +19,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 24px;
   color: white;
+  text-shadow: 3px 2px #222;
 }
 
 /* Blocks */
@@ -34,6 +35,10 @@ body {
   justify-content: space-between;
   border-radius: 1px;
   color: white;
+}
+
+.search__input {
+  border: none;
 }
 
 .header__nav {
@@ -83,11 +88,14 @@ body {
 .nav__link:hover {
   color: gray;
 }
+.nav__link.has-subnav {
+  padding: 0;
+}
 
 .search {
   width: 100%;
   max-width: 400px;
-  background-color: #444;
+  background-color: rgb(120, 120, 120);
 }
 
 .search__input {
@@ -116,7 +124,7 @@ body {
   padding: 20px 0 20px 0;
 }
 
-.lether__head {
+.leather__head {
   display: flex;
   width: 60%;
   justify-content: space-between;
@@ -128,6 +136,10 @@ body {
   display: inline-block;
   width: 80%;
   height: 60%;
+}
+.main_img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 
 .stuff {
@@ -162,10 +174,10 @@ body {
   list-style-type: none;
 }
 
-.lether__stuff {
+.leather__stuff {
   display: flex;
   text-align: left;
-  width: 30%;
+  width: 20%;
   height: 100%;
 }
 
@@ -175,16 +187,18 @@ body {
   font-size: 10px;
 }
 
+.ul__text,
 .ul__header {
-  padding: 5px;
   padding-left: 50px;
+  text-decoration: none;
+}
+
+.ul__header {
   font-size: 18px;
   color: white;
 }
 
 .ul__text {
-  padding: 5px;
-  padding-left: 50px;
   font-size: 12px;
   color: gray;
 }
@@ -202,20 +216,140 @@ body {
   display: block;
   position: absolute;
   height: 60vh;
-  width: 70%;
+  width: 60%;
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 20%;
   border: black solid 4px;
   background-color: rgb(140, 140, 140);
   border-radius: 15px;
   box-shadow: inset 3px 3px 0px rgb(255, 255, 255), inset -4px -4px 0px rgb(80, 80, 80), -4px -4px 3px rgba(255, 255, 255, 0.2), 4px 4px 3px rgba(255, 255, 255, 0.2);
 }
 
-.lether__helmet {
-  width: 10%;
+.item__text,
+.image__head {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
 }
 
-.main__product__image {
+.item__text {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  margin-right: -50%;
+}
+
+.product__img {
+  width: 200px;
+}
+
+.price__block {
   display: flex;
-  margin-top: 6%;
+  position: absolute;
+  top: 48%;
+  left: 65%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: rgb(140, 140, 140) url("/assets/images/Emerald.png") center no-repeat;
+  width: 70px;
+  background-size: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 48px;
+  text-shadow: 1px 2px black;
+}
+
+.emerald {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.buy__box {
+  position: absolute;
+  top: 48%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.buy__button {
+  width: 200px;
+  height: 100px;
+  box-shadow: inset 3px 3px 0px rgb(255, 255, 255), inset -4px -4px 0px rgb(80, 80, 80), -4px -4px 3px rgba(255, 255, 255, 0.2), 4px 4px 3px rgba(255, 255, 255, 0.2);
+  background-color: rgb(140, 140, 140);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s linear;
+}
+.buy__button:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.buy__text {
+  font-size: 48px;
+}
+
+.select__color {
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.color__block {
+  width: 70px;
+}
+
+.sub__color__block {
+  width: 30px;
+}
+
+.select__color:hover > .selector {
+  display: block;
+}
+
+.selector {
+  display: none;
+}
+
+.info {
+  text-align: center;
+  width: 60%;
+  padding-left: 20%;
+}
+
+.header__text,
+.main__text {
+  padding-top: 60px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+  transition: background-color 0.2s linear;
+}
+.link:hover {
+  color: gray;
+}
+.link.poetry {
+  color: green;
+}
+.link.poetry:hover {
+  color: darkgreen;
 }

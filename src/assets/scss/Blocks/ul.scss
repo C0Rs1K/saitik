@@ -1,13 +1,15 @@
+.ul__text,
 .ul__header {
-    padding: 5px;
     padding-left: 50px;
+    text-decoration: none;
+}
+
+.ul__header {
     font-size: 18px;
     color: white;
 }
 
 .ul__text {
-    padding: 5px;
-    padding-left: 50px;
     font-size: 12px;
     color: gray;
 }

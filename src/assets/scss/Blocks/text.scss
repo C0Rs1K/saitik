@@ -1,0 +1,34 @@
+
+
+.info {
+    text-align: center;
+    width: 60%;
+    padding-left: 20%;
+}
+
+.header__text,
+.main__text {
+    padding-top: 60px;
+}
+
+
+.link {
+    text-decoration: none;
+    font-family: inherit;
+
+    color: white;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        color: gray;
+    }
+
+    &.poetry {
+        color: green;
+
+        &:hover {
+            color: darkgreen;
+        }
+    }
+}

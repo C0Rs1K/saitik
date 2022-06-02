@@ -13,7 +13,7 @@
     padding: 20px 0 20px 0;
 }
 
-.lether__head {
+.leather__head {
     display: flex;
     width: 60%;
     justify-content: space-between;
@@ -25,6 +25,11 @@
     display: inline-block;
     width: 80%;
     height: 60%;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
 }
 
 .stuff {
